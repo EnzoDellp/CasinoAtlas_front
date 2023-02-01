@@ -1,0 +1,33 @@
+@use '../base/mixins' as m;
+@use "../base/variables" as v;
+li{
+    list-style: none;
+}
+.compromiso{
+    padding-top: 2rem;
+    @include m.grid(2,1rem);
+    .compromiso-h2{
+        padding-top: 17rem;
+        color: v.$blanco;
+        font-size: 4rem;
+        text-transform: capitalize;
+        padding-left: 2rem;
+        font-weight: 800;
+
+    }
+
+   
+}
+.compromiso-li{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: v.$grisC;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 5rem;
+    p{
+        color: v.$blanco;
+        text-transform: capitalize;   
+    }
+    
+}

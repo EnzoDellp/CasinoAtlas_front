@@ -1,0 +1,44 @@
+@use '../base/mixins' as m;
+@use "../base/variables" as v;
+
+.plan{
+    background-color: v.$verde;
+    color: v.$blanco;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    h2{
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+
+  
+
+    .planes{
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        padding-bottom: 3rem;
+        h3{
+          font-size: 2rem;
+        }
+        
+        p{
+            color: v.$blanco;  
+            font-weight: 700;
+            padding: 2rem;
+        }
+        a{
+            color: v.$blanco;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            font-weight: 700;
+
+
+        }
+    }
+
+    
+}

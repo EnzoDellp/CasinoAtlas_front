@@ -1,0 +1,66 @@
+@use '../base/mixins' as m;
+@use "../base/variables" as v;
+
+.contacto-content{
+    color:v.$blanco;
+    h2{
+        text-align: center;
+    }
+    p{
+        color: v.$blanco;
+    }
+    padding-bottom: 2rem;
+}
+
+.formulario{
+    background-color: v.$verdeClaro;
+  
+    h2{
+        color: v.$blanco;
+        text-align: center;
+        padding-bottom: 2rem;
+       
+    }
+   
+
+}
+.campo{
+    padding-left: 5rem;
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    color: v.$blanco;     
+    font-size: 1.8rem;
+    font-weight: 800;
+    
+    
+}
+.campo__label{
+  flex: 0 0 1;
+    text-align: right;
+
+    
+}
+
+.campo__field{
+flex: 0.2;
+align-items: center;
+font-size: 1.5rem;
+border: none;
+}
+.campo__field--textarea{
+border: none;
+height: 10rem;
+}
+.campo__label---email{
+   padding-left: 2rem;
+}
+.submit{
+    text-decoration: none;
+    border: none;
+    margin-bottom: 4rem;
+    margin-left: 6rem;
+   font-size: 1.5rem;
+   color: v.$negro;
+   font-weight: 800;   
+}

@@ -1,0 +1,101 @@
+@use '../base/mixins' as m;
+@use "../base/variables" as v;
+
+
+
+.header{
+    background-color: v.$verde;
+    padding: 6rem;
+    
+    h1{
+        color:  v.$blanco;
+        text-align: center;
+        margin: 0;
+    }
+    .contenido-header{
+        padding: 2rem;
+        @include m.tablet {
+            display:flex;
+            justify-content: space-evenly;
+          
+        }
+    }
+}
+
+.header-nav{
+    @include m.tablet {
+        displat:flex;
+        gap: 10rem;
+    }
+   a{
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    color: v.$blanco;
+    text-decoration: none;
+   
+    
+    &:hover{
+        color:v.$grisC;
+    }
+    
+   }
+
+    
+}
+
+.titulos{
+    .titulo-h2{
+       position: relative;
+       left: 5rem;
+        color:v.$blanco;
+        font-weight: 800;
+        font-size: 5rem;
+        text-align: left;
+        @include m.tablet{
+            font-size: 7.5rem;
+
+        }
+        
+       
+    }
+    .titulo-p{
+        font-size: 3rem;
+        color: v.$blanco;
+        text-align: left;
+        text-align: center;
+
+        @include m.tablet{
+            font-size: 3.2rem;
+           text-align: left;
+           margin-left: 2%;
+        }
+    }
+    .btn-header{
+        border:none;
+        background-color: v.$verde;
+        color: v.$rosa;
+        font-size: 2.5rem;
+        font-family: v.$fuelte_principal;
+        text-decoration: none;
+        margin-top: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 110px; 
+        margin-left: 50%;
+        transform: translateX(-50%);
+        &:hover{
+            color: v.$navy;
+            cursor: pointer;
+           
+        }
+        @include m.tablet{
+        margin-left: 5%;
+        } 
+    }
+   
+}
+
+
+

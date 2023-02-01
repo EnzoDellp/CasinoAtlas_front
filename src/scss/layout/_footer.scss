@@ -1,0 +1,35 @@
+@use '../base/mixins' as m;
+@use "../base/variables" as v;
+
+
+.footer{
+    background-color: v.$verde;
+
+    .social__p{
+        color: v.$negro;
+        text-align: center;
+        font-weight: 800;
+        text-transform: capitalize;
+        font-size: 2.3rem;
+    }
+    .footer-p{
+        text-align: center;
+        color: v.$negro;
+        font-weight: 800;
+        text-transform: capitalize;
+        font-size: 2.3rem;
+    }
+    .social__a{
+    padding-top: 5rem;
+    gap: 1rem;
+    display: flex;
+    margin: 0 auto;
+    max-width: 22%;
+    min-width: 23%;
+
+    
+      
+        
+    }
+   
+}
